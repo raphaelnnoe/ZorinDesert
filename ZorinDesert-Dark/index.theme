@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZorinDesert-Dark
+Comment=Dark desert-night desktop theme with moonlit blue accents
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZorinDesert-Dark
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close

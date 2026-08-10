@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ZorinDesert-Light
+Comment=Light desert-inspired desktop theme with warm terracotta accents
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ZorinDesert-Light
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=:minimize,maximize,close
