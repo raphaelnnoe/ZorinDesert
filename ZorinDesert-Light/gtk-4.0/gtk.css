@@ -2754,7 +2754,7 @@ window.background.chromium button:backdrop { border-color: alpha(@headerbar_back
 window.background.chromium > textview.view, window.print window.background.chromium > textview.dialog-action-box { background-color: #f1efed; }
 
 /************ Nautilus * */
-.nautilus-window.view, window.print .nautilus-window.dialog-action-box, .nautilus-window statuspage.view, .nautilus-window window.print statuspage.dialog-action-box, window.print .nautilus-window statuspage.dialog-action-box { background-color: @window_bg_color; }
+.nautilus-window.view, window.print .nautilus-window.dialog-action-box, .nautilus-window statuspage.view, .nautilus-window window.print statuspage.dialog-action-box, window.print .nautilus-window statuspage.dialog-action-box { background-color: #e8e3dc; }
 
 .nautilus-window.view:backdrop, window.print .nautilus-window.dialog-action-box:backdrop, .nautilus-window statuspage.view:backdrop, .nautilus-window window.print statuspage.dialog-action-box:backdrop, window.print .nautilus-window statuspage.dialog-action-box:backdrop { background-color: @window_backdrop_color; }
 
