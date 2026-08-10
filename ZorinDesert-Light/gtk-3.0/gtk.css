@@ -1933,6 +1933,7 @@ window.background.csd > grid.horizontal > widget > widget > scrolledwindow > vie
 .nautilus-window .nautilus-canvas-item { border-radius: 0px; }
 
 .nautilus-window .nautilus-canvas-item.label-text { border-radius: 9px; }
+.nautilus-window iconview.view, .nautilus-window .nautilus-canvas-view { background-color: #e8e3dc; }
 
 .nautilus-window .thumbnail { box-shadow: 0 1.5px 2px 1px rgba(61, 48, 35, 0.225); }
 
@@ -1950,7 +1951,7 @@ window.background.csd > grid.horizontal > widget > widget > scrolledwindow > vie
 
 .nautilus-window .floating-bar button { padding: 0; }
 
-.nautilus-window .nautilus-list-view { background-color: #eceae5; border-radius: 0; }
+.nautilus-window .nautilus-list-view { background-color: #e8e3dc; border-radius: 0; }
 
 .nautilus-window .nautilus-list-view treeview.view:not(:hover):not(:active):not(:selected) { background-color: transparent; border-radius: 0; }
 
