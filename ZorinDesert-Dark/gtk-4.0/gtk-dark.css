@@ -2783,3 +2783,6 @@ popover > contents { box-shadow: 0 10px 28px alpha(@shade_color,0.65), 0 0 0 1px
 .navigation-sidebar row:selected:hover { background-color: shade(@accent_bg_color,0.94); }
 button:focus-visible, row:focus-visible, checkbutton:focus-visible, switch:focus-visible { outline-color: @accent_color; }
 separator { background-color: alpha(@window_fg_color,0.12); }
+
+/* Preserve the application-defined colors of PDF annotation swatches. */
+button.color-button { background: var(--accent-bg-color); }
