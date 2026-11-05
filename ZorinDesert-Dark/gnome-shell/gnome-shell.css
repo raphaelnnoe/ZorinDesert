@@ -4123,7 +4123,7 @@ StWidget.focused .app-grid-running-dot {
   spacing-columns: 12px;
 }
 
-.quick-toggle, .quick-toggle-has-menu {
+.quick-toggle, .quick-toggle-has-menu, .quick-menu-toggle {
   border-radius: 9999px;
   min-width: 12em;
   max-width: 12em;
@@ -4180,7 +4180,8 @@ StWidget.focused .app-grid-running-dot {
   padding-right: 16px;
 }
 
-.quick-toggle .quick-toggle-subtitle {
+.quick-toggle .quick-toggle-subtitle,
+.quick-toggle StBoxLayout > .quick-toggle-subtitle {
   font-weight: normal;
 }
 
@@ -4188,75 +4189,91 @@ StWidget.focused .app-grid-running-dot {
   icon-size: 1.091em;
 }
 
-.quick-toggle-has-menu .quick-toggle {
+.quick-toggle-has-menu .quick-toggle,
+.quick-menu-toggle .quick-toggle {
   min-width: auto;
   max-width: auto;
 }
 
-.quick-toggle-has-menu .quick-toggle:ltr {
+.quick-toggle-has-menu .quick-toggle:ltr,
+.quick-menu-toggle .quick-toggle:ltr {
   border-radius: 9999px 0 0 9999px;
 }
 
-.quick-toggle-has-menu .quick-toggle:ltr > StBoxLayout {
+.quick-toggle-has-menu .quick-toggle:ltr > StBoxLayout,
+.quick-menu-toggle .quick-toggle:ltr > StBoxLayout {
   padding-right: 8px;
 }
 
-.quick-toggle-has-menu .quick-toggle:rtl {
+.quick-toggle-has-menu .quick-toggle:rtl,
+.quick-menu-toggle .quick-toggle:rtl {
   border-radius: 0 9999px 9999px 0;
 }
 
-.quick-toggle-has-menu .quick-toggle:rtl > StBoxLayout {
+.quick-toggle-has-menu .quick-toggle:rtl > StBoxLayout,
+.quick-menu-toggle .quick-toggle:rtl > StBoxLayout {
   padding-left: 8px;
 }
 
-.quick-toggle-has-menu .quick-toggle:ltr:last-child {
+.quick-toggle-has-menu .quick-toggle:ltr:last-child,
+.quick-menu-toggle .quick-toggle:ltr:last-child {
   border-radius: 9999px;
 }
 
-.quick-toggle-has-menu .quick-toggle:rtl:last-child {
+.quick-toggle-has-menu .quick-toggle:rtl:last-child,
+.quick-menu-toggle .quick-toggle:rtl:last-child {
   border-radius: 9999px;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button {
+.quick-toggle-has-menu .quick-toggle-menu-button,
+.quick-menu-toggle .quick-toggle-arrow {
   padding: 0.409em 0.818em;
   border: none;
   background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button:hover {
+.quick-toggle-has-menu .quick-toggle-menu-button:hover,
+.quick-menu-toggle .quick-toggle-arrow:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button:active {
+.quick-toggle-has-menu .quick-toggle-menu-button:active,
+.quick-menu-toggle .quick-toggle-arrow:active {
   background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button:checked {
+.quick-toggle-has-menu .quick-toggle-menu-button:checked,
+.quick-menu-toggle .quick-toggle-arrow:checked {
   background-color: #9fbde4 !important;
   color: #111827;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button:checked:hover {
+.quick-toggle-has-menu .quick-toggle-menu-button:checked:hover,
+.quick-menu-toggle .quick-toggle-arrow:checked:hover {
   color: #111827;
   background-color: #93afd3 !important;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button:checked:active {
+.quick-toggle-has-menu .quick-toggle-menu-button:checked:active,
+.quick-menu-toggle .quick-toggle-arrow:checked:active {
   color: #111827;
   background-color: #879fbe !important;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button:ltr {
+.quick-toggle-has-menu .quick-toggle-menu-button:ltr,
+.quick-menu-toggle .quick-toggle-arrow:ltr {
   border-radius: 0 9999px 9999px 0;
   border-left-width: 0;
 }
 
-.quick-toggle-has-menu .quick-toggle-menu-button:rtl {
+.quick-toggle-has-menu .quick-toggle-menu-button:rtl,
+.quick-menu-toggle .quick-toggle-arrow:rtl {
   border-radius: 9999px 0 0 9999px;
   border-right-width: 0;
 }
 
-.quick-toggle-has-menu .quick-toggle-separator {
+.quick-toggle-has-menu .quick-toggle-separator,
+.quick-menu-toggle .quick-toggle-separator {
   width: 0;
 }
 
