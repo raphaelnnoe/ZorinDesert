@@ -152,8 +152,15 @@ apply_theme() {
             gsettings set org.gnome.desktop.interface color-scheme "$color_scheme" 2>/dev/null || true
         fi
 
-        # Define o tema do Shell se a extensão user-theme estiver disponível
-        gsettings set org.gnome.shell.extensions.user-theme name "$theme_name" 2>/dev/null || true
+        # Define o tema do Shell se a extensão user-theme estiver disponível (sistema ou local)
+        local user_theme_schema="$HOME/.local/share/gnome-shell/extensions/user-theme@gnome-shell-extensions.gcampax.github.com/schemas"
+        if [ -d "$user_theme_schema" ]; then
+            gsettings --schemadir "$user_theme_schema" set org.gnome.shell.extensions.user-theme name "" 2>/dev/null || true
+            gsettings --schemadir "$user_theme_schema" set org.gnome.shell.extensions.user-theme name "$theme_name" 2>/dev/null || true
+        else
+            gsettings set org.gnome.shell.extensions.user-theme name "" 2>/dev/null || true
+            gsettings set org.gnome.shell.extensions.user-theme name "$theme_name" 2>/dev/null || true
+        fi
     fi
 
     # Suporte para XFCE (Zorin OS Lite)
@@ -236,11 +243,13 @@ interactive_menu() {
         5)
             check_sources
             install_user
+            install_libadwaita "$THEME_DARK"
             apply_theme "$THEME_DARK" "prefer-dark"
             ;;
         6)
             check_sources
             install_user
+            install_libadwaita "$THEME_LIGHT"
             apply_theme "$THEME_LIGHT" "default"
             ;;
         7)
@@ -286,11 +295,13 @@ else
                 ;;
             --apply-dark)
                 install_user
+                install_libadwaita "$THEME_DARK"
                 apply_theme "$THEME_DARK" "prefer-dark"
                 shift
                 ;;
             --apply-light)
                 install_user
+                install_libadwaita "$THEME_LIGHT"
                 apply_theme "$THEME_LIGHT" "default"
                 shift
                 ;;
