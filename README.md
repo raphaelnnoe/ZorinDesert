@@ -41,8 +41,8 @@ Menu options:
 2. **Libadwaita / GTK4 (`~/.config/gtk-4.0`) - Dark**: Backs up existing GTK4 configs and copies `ZorinDesert-Dark` GTK4 assets.
 3. **Libadwaita / GTK4 (`~/.config/gtk-4.0`) - Light**: Backs up existing GTK4 configs and copies `ZorinDesert-Light` GTK4 assets.
 4. **System-wide Installation (`/usr/share/themes`)**: Installs themes for all system users (requires `sudo`).
-5. **Install & Apply Dark Theme**: Installs themes and sets `ZorinDesert-Dark` as active.
-6. **Install & Apply Light Theme**: Installs themes and sets `ZorinDesert-Light` as active.
+5. **Install & Apply Dark Theme**: Installs themes (including Libadwaita/GTK4) and sets `ZorinDesert-Dark` as active.
+6. **Install & Apply Light Theme**: Installs themes (including Libadwaita/GTK4) and sets `ZorinDesert-Light` as active.
 7. **Uninstall**: Removes ONLY ZorinDesert themes and **restores original `~/.config/gtk-4.0` backup** (other themes are kept).
 8. **Exit**.
 
@@ -79,6 +79,8 @@ Menu options:
   ```bash
   ./install.sh -r
   ```
+
+> **Tip for *Blur my Shell* users:** If you use the *Blur my Shell* extension with **"Override background"** enabled under *Other / Popups*, also enable **"Preserve shell theme"** right below it so Quick Settings toggles keep the `ZorinDesert` colors.
 
 ---
 
@@ -119,8 +121,8 @@ Opções do menu:
 2. **Libadwaita / GTK4 (`~/.config/gtk-4.0`) - Dark**: Cria backup e instala os arquivos do `ZorinDesert-Dark`.
 3. **Libadwaita / GTK4 (`~/.config/gtk-4.0`) - Light**: Cria backup e instala os arquivos do `ZorinDesert-Light`.
 4. **Instalar no Sistema (`/usr/share/themes`)**: Instala os temas para todos os usuários (requer `sudo`).
-5. **Instalar e Aplicar Tema Escuro**: Instala os temas e define o `ZorinDesert-Dark` como ativo.
-6. **Instalar e Aplicar Tema Claro**: Instala os temas e define o `ZorinDesert-Light` como ativo.
+5. **Instalar e Aplicar Tema Escuro**: Instala os temas (incluindo Libadwaita/GTK4) e define o `ZorinDesert-Dark` como ativo.
+6. **Instalar e Aplicar Tema Claro**: Instala os temas (incluindo Libadwaita/GTK4) e define o `ZorinDesert-Light` como ativo.
 7. **Desinstalar**: Remove APENAS os temas ZorinDesert e **restaura o backup de `~/.config/gtk-4.0`** (outros temas são mantidos).
 8. **Sair**.
 
@@ -157,3 +159,5 @@ Opções do menu:
   ```bash
   ./install.sh -r
   ```
+
+> **Dica para usuários do *Blur my Shell*:** Se você utiliza a extensão *Blur my Shell* com a opção **"Substituir plano de fundo"** (*Override background*) ativada, ative também a opção **"Preserve shell theme"** logo abaixo para manter as cores originais do `ZorinDesert` nos botões das Configurações Rápidas.
